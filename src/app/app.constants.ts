@@ -1,0 +1,42 @@
+export const AppConstants = {
+    COUNTRY_SETTINGS: {
+        AUS: { name: 'Australia', center: [138, -28], zoom: 3.5 },
+        USA: { name: 'USA', center: [-100.891160, 40.079922], zoom: 2.8 },
+        IND: { name: 'India', center: [85, 22], zoom: 3.8 },
+        ITA: { name: 'Italy', center: [13.5, 42.1], zoom: 4.8 },
+        JPN: { name: 'Japan', center: [138, 36], zoom: 5.2 },
+        GBR: { name: 'UK', center: [-3.36, 53], zoom: 4.2 },
+        TUR: { name: 'Turkey', center: [35.2433, 38.9637], zoom: 4.8 },
+        SGP: { name: 'Singapore', center: [103.8675703, 1.3552649], zoom: 10 },
+        VNM: { name: 'Vietnam', center: [108.2772, 14.0583], zoom: 6.2 },
+        NZL: { name: 'New Zealand', center: [172.384641, -42.407205], zoom: 5.2 },
+        IRL: { name: 'Ireland', center: [-8.190615, 53.209594], zoom: 5.2 },
+        PHL: { name: 'Philippines', center: [122.971583, 12.527053], zoom: 6.1 },
+        MYS: { name: 'Malaysia', center: [101.9758, 4.2105], zoom: 6.1 },
+        IDN: { name: 'Indonesia', center: [113.9213, 0.7893], zoom: 4.1 },
+        HKG: { name: 'Hong Kong', center: [114.175938, 22.287747], zoom: 11.1 },
+        DEU: { name: 'Germany', center: [10.230310, 51.092013], zoom: 6.1 },
+        BEL: { name: 'Belgium', center: [4.366812, 50.856393], zoom: 9.1 },
+        FRA: { name: 'France', center: [2.3869512, 47.0303449], zoom: 6.1 },
+        THA: { name: 'Thailand', center: [100.884852, 15.469031], zoom: 6.1 },
+        POL: { name: 'Poland', center: [19.490199, 51.770910], zoom: 6.1 },
+        SWE: { name: 'Sweden', center: [16.613010, 63.005185], zoom: 5.1 },
+        NLD: { name: 'Netherlands', center: [5.464816, 52.366497], zoom: 7.1 },
+        LUX: { name: 'Luxembourg', center: [6.127972, 49.609364], zoom: 10.1 },
+        ESP: { name: 'Spain', center: [-3.703625, 40.416886], zoom: 6.1 },
+        SAU: { name: 'Saudi Arabia', center: [45.0792, 23.8859], zoom: 4 },
+        ARE: { name: 'United Arab Emirates', center: [54, 24.5], zoom: 6.5 },
+        BGD: { name: 'Bangladesh', center: [90.3563, 23.6850], zoom: 6.5 },
+        KOR: { name: 'South Korea', center: [127.7669, 35.9078], zoom: 6.5 },
+        MAC: { name: 'Macau', center: [113.5439, 22.1987], zoom: 9.5 },
+        TWN: { name: 'Taiwan', center: [120.9605, 23.6978], zoom: 7.5 }
+    },
+    COUNTRY_SETTINGS_CHOROPLETH: {
+        AUS: { sources: ['aus-admin-area-lv6'], poaKey: 'name_en' },
+        USA: { sources: ['usa-postal-areas'], poaKey: 'POANAME' },
+        IND: { sources: ['ind-admin-area-lv3'], poaKey: 'name_en' },
+        ITA: { sources: ['ita-admin-area-lv3'], poaKey: 'name_en' },
+        JPN: { sources: ['jpn-postal-areas-1', 'jpn-postal-areas-2'], poaKey: 'PostalCode' },
+        GBR: { sources: ['gbr-postal-areas'], poaKey: 'POANAME' }
+    }
+}

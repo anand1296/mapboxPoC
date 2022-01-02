@@ -1,0 +1,21 @@
+<div class="map-main">
+    <div id="map" class="map-container"> </div>
+    <div class="country-options-card">
+        <label class="title">Select countries</label>
+        <div class="country-options">
+            <ul>
+                <li *ngFor="let country of countryDataList" #countryElement
+                    (click)="selectCountry(countryElement, country)">
+                    <label>{{country.name}}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="map-type-toggle">
+        <div class="buttons-row">
+            <button class="btn btn-outline-info" [ngClass]="{'active': mapType === 'cluster_map'}" (click)="changeMapType('heat_map')">Cluster-map</button>
+            <button class="btn btn-outline-info" [ngClass]="{'active': mapType === 'heat_map'}" (click)="changeMapType('cluster_map')">Heatmap</button>
+            <!-- <button>Both</button> -->
+        </div>
+    </div>
+</div>

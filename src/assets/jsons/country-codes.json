@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "code": "RUS",
+            "hdi": 0.816,
+            "name": "Russia"
+        },
+        {
+            "code": "SRB",
+            "hdi": 0.787,
+            "name": "Serbia"
+        },
+        {
+            "code": "SVK",
+            "hdi": 0.855,
+            "name": "Slovakia"
+        },
+        {
+            "code": "ESP",
+            "hdi": 0.891,
+            "name": "Spain"
+        },
+        {
+            "code": "SWE",
+            "hdi": 0.933,
+            "name": "Sweden"
+        },
+        {
+            "code": "CZE",
+            "hdi": 0.888,
+            "name": "Czech Republic"
+        },
+        {
+            "code": "DNK",
+            "hdi": 0.929,
+            "name": "Denmark"
+        },
+        {
+            "code": "EST",
+            "hdi": 0.871,
+            "name": "Estonia"
+        },
+        {
+            "code": "FIN",
+            "hdi": 0.92,
+            "name": "FInland"
+        },
+        {
+            "code": "FRA",
+            "hdi": 0.901,
+            "name": "France"
+        },
+        {
+            "code": "AUT",
+            "hdi": 0.908,
+            "name": "Austria"
+        },
+        {
+            "code": "BLR",
+            "hdi": 0.808,
+            "name": "Belarus"
+        },
+        {
+            "code": "BEL",
+            "hdi": 0.916,
+            "name": "Belgium"
+        },
+        {
+            "code": "NLD",
+            "hdi": 0.931,
+            "name": "Netherlands"
+        },
+        {
+            "code": "NOR",
+            "hdi": 0.953,
+            "name": "Nowray"
+        },
+        {
+            "code": "POL",
+            "hdi": 0.865,
+            "name": "Poland"
+        },
+        {
+            "code": "IRL",
+            "hdi": 0.938,
+            "name": "Ireland"
+        },
+        {
+            "code": "ITA",
+            "hdi": 0.88,
+            "name": "Italy"
+        },
+        {
+            "code": "LUX",
+            "hdi": 0.904,
+            "name": "Luxemburg"
+        },
+        {
+            "code": "UKR",
+            "hdi": 0.751,
+            "name": "Ukraine"
+        },
+        {
+            "code": "GBR",
+            "hdi": 0.922,
+            "name": "Great Britain"
+        }
+    ]
+}

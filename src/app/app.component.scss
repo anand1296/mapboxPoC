@@ -1,0 +1,44 @@
+
+$headerHeight: 3rem;
+$footerHeight: 2rem;
+$themeColor: #343a40;
+$themeTextColor: cornsilk;
+
+@mixin flex-center-v {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-v {
+    display: flex;
+    align-items: center;
+}
+
+header, footer {
+    background-color: $themeColor;
+    color: $themeTextColor;
+    @include flex-center-v();
+}
+
+header {
+    height: $headerHeight;
+    h2 {
+        margin: 0;
+        a {
+            color: $themeTextColor;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    height: $footerHeight;
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.router-output {
+    height: calc(100vh - #{$headerHeight} - #{$footerHeight});
+}
