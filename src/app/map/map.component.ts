@@ -40,10 +40,10 @@ export class MapComponent implements OnInit {
       this.countryDataList = resp.data;
     });
 
-    this.dataService.getCoordinates().subscribe((resp: any) => {
-      console.log(resp);
-      this.place_coordinates = resp;
-    });
+//     this.dataService.getCoordinates().subscribe((resp: any) => {
+//       console.log(resp);
+//       this.place_coordinates = resp;
+//     });
 
     this.initializemap();
   }
@@ -469,22 +469,22 @@ export class MapComponent implements OnInit {
         [-67.13734, 45.13745]
       ]
     ];
-    console.log('api coordinates: ', this.place_coordinates);
-    console.log('api coordinates[0]: ', this.place_coordinates[0]);
+//     console.log('api coordinates: ', this.place_coordinates);
+//     console.log('api coordinates[0]: ', this.place_coordinates[0]);
     console.log('hardcoded coordinates: ', coordinates);
-    let geojson = this.getPolygonsByType(this.place_coordinates, 'MultiPolygon');
+//     let geojson = this.getPolygonsByType(this.place_coordinates, 'MultiPolygon');
     this.map.addSource('maine', {
       'type': 'geojson',
-      // 'data': {
-      //   'type': 'Feature',
-      //   'geometry': {
-      //     'type': 'Polygon',
-      //     // 'coordinates': this.place_coordinates
-      //     'coordinates': this.place_coordinates[0]
-      //     // 'coordinates': coordinates
-      //   }
-      // }
-      'data': geojson
+      'data': {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Polygon',
+          // 'coordinates': this.place_coordinates
+//           'coordinates': this.place_coordinates[0]
+          'coordinates': coordinates
+        }
+      }
+//       'data': geojson
     });
 
     // Add a new layer to visualize the polygon.
@@ -499,7 +499,8 @@ export class MapComponent implements OnInit {
       }
     });
 
-    this.flyToPolygon(this.place_coordinates);
+//     this.flyToPolygon(this.place_coordinates);
+       this.map.flyTo({ center: coordinates[0][0], zoom: 4.5})
   }
 
   getPolygonsByType(geoAssetArray: any, polygonType: any) {
