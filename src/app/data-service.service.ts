@@ -13,8 +13,8 @@ export class DataService {
     return this.httpClient.get(`${localDataPath}`, {});
   }
 
-  getCoordinates() {
-    const localDataPath = '/assets/jsons/coordinates.json';
-    return this.httpClient.get(`${localDataPath}`, {});
-  }
+//   getCoordinates() {
+//     const localDataPath = '/assets/jsons/coordinates.json';
+//     return this.httpClient.get(`${localDataPath}`, {});
+//   }
 }
